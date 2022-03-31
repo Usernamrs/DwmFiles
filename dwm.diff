@@ -1,0 +1,22 @@
+4c4
+< static const unsigned int borderpx  = 2;        /* border pixel of windows */
+---
+> static const unsigned int borderpx  = 1;        /* border pixel of windows */
+8c8
+< static const char *fonts[]          = { "monospace:size=8" };
+---
+> static const char *fonts[]          = { "monospace:size=10" };
+15d14
+< /* static const char globe 	    = 0x1F310;*/
+22d20
+< /*\U0001F310*/
+64d61
+< static const char *surf[]  = { "surf", NULL };
+70d66
+< 	{ MODKEY|ShiftMask,             XK_x, 	   spawn,          {.v = surf } },
+72,73c68,69
+< 	{ MODKEY,                       XK_k,      focusstack,     {.i = +1 } },
+< 	{ MODKEY,                       XK_j,      focusstack,     {.i = -1 } },
+---
+> 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
+> 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
